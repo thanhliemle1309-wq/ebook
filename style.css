@@ -111,3 +111,98 @@ body {
     object-fit: cover; 
     border-radius: inherit;
 }
+
+.book-page {
+    width: 100%;
+    height: 100%;
+    background-color: #FBF9F1; /* Màu giấy kem vintage chuẩn mẫu */
+    display: flex;
+    position: relative;
+    overflow: hidden;
+}
+
+
+.left-sidebar {
+    width: 28%;
+    background-color: #7A9084;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.left-sidebar .page-number {
+    color: #FFFFFF;
+    font-size: 52px;
+    font-family: 'Playfair Display', serif;
+    font-weight: 700;
+}
+
+
+.content-area {
+    flex: 1;
+    padding: 20px 20px;
+    display: flex;
+    flex-direction: column;
+}
+
+
+.content-area .toc-title {
+    font-family: 'Playfair Display', serif;
+    font-size: 34px;
+    font-weight: 700;
+    color: #262423;
+    letter-spacing: 2px;
+    margin-bottom: 25px;
+    border-bottom: 1px solid #D5CEBE;
+    padding-bottom: 12px;
+}
+
+.toc-list {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.toc-item.chapter-heading {
+    font-family: 'Playfair Display', serif;
+    font-style: italic;
+    font-weight: 700;
+    font-size: 15px;
+    color: #262423;
+    margin-bottom: 8px;
+}
+
+
+.toc-row {
+    display: flex;
+    justify-content: space-between;
+    align-items: baseline;
+    font-family: 'Inter', sans-serif;
+    font-size: 11px;
+    color: #4A4745;
+    margin-bottom: 10px;
+    padding-left: 12px;
+}
+
+.toc-text {
+    background-color: #FBF9F1;
+    padding-right: 4px;
+    z-index: 2;
+}
+
+
+.toc-dots {
+    flex: 1;
+    border-bottom: none;
+    margin: 0 6px;
+    position: relative;
+    top: -3px;
+}
+
+.toc-page {
+    font-weight: 500;
+    color: #262423;
+    background-color: #FBF9F1;
+    padding-left: 4px;
+    z-index: 2;
+}
