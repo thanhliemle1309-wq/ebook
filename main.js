@@ -93,6 +93,75 @@ const pages = [
   ], callout: "Hoàn thành ebook · Hãy dùng mục lục và câu hỏi ôn tập để hệ thống hóa kiến thức."}
 ];
 
+
+// PHẦN BỔ SUNG — nội dung mở rộng dựa trên tài liệu nhóm cung cấp.
+// Giữ nguyên các trang hiện có; chỉ nối thêm các trang mới trước khi dựng giao diện.
+pages.push(
+  { title: "Mở rộng: sử dụng giá trị thặng dư", subtitle: "Ba hướng sử dụng chủ yếu", body: [
+    ["1. Hưởng thụ và tiêu dùng cá nhân", "Nhà tư bản có thể dùng một phần giá trị thặng dư cho nhu cầu sinh hoạt, nhà ở, phương tiện đi lại, nghỉ ngơi, chăm sóc sức khỏe và giáo dục gia đình."],
+    ["2. Tích lũy và mở rộng sản xuất", "Một phần giá trị thặng dư được giữ lại để đầu tư thêm máy móc, nhà xưởng, nguyên vật liệu, tuyển dụng lao động, nghiên cứu và phát triển sản phẩm."],
+    ["3. Phân phối cho chủ thể khác", "Tùy hình thức tổ chức kinh doanh, một phần thu nhập có thể được phân phối cho các chủ thể liên quan, chẳng hạn cổ tức cho cổ đông. Cần phân biệt khoản phân phối này với việc trực tiếp tái đầu tư vào sản xuất."],
+    ["Ví dụ minh họa", "Một xưởng may có thể dùng một phần khoản thu được để chi tiêu cá nhân, phần còn lại mua máy may mới và nguyên liệu, đồng thời thuê thêm lao động để tăng năng lực sản xuất."]
+  ], callout: "Giá trị thặng dư có thể được phân chia cho tiêu dùng và tích lũy; tỷ lệ phân chia ảnh hưởng đến khả năng mở rộng sản xuất." },
+  { title: "Nhân tố 1: Trình độ khai thác sức lao động", body: [
+    ["Khái niệm", "Trong lý luận kinh tế chính trị Mác, trình độ khai thác sức lao động được xem xét qua quan hệ giữa thời gian lao động cần thiết và thời gian lao động thặng dư. Khi các điều kiện khác không đổi, khối lượng giá trị thặng dư lớn hơn có thể tạo thêm nguồn tích lũy."],
+    ["Hai phương pháp thường được đề cập", "Sản xuất giá trị thặng dư tuyệt đối gắn với kéo dài thời gian lao động vượt quá thời gian lao động cần thiết; sản xuất giá trị thặng dư tương đối gắn với rút ngắn thời gian lao động cần thiết nhờ nâng cao năng suất."],
+    ["Ví dụ minh họa", "Giả sử ngày lao động 8 giờ gồm 4 giờ lao động cần thiết và 4 giờ lao động thặng dư. Nếu năng suất làm thời gian lao động cần thiết giảm còn 2 giờ, thời gian thặng dư có thể tăng lên 6 giờ, trong cùng ngày lao động 8 giờ."],
+    ["Góc nhìn thực tiễn", "Ví dụ lý luận không nên được hiểu là khuyến khích làm thêm không lương hoặc vi phạm quyền lợi người lao động. Khi phân tích thực tế cần xem xét pháp luật lao động, tiền lương, điều kiện làm việc và an toàn."]
+  ]},
+  { title: "Nhân tố 2: Năng suất lao động xã hội", body: [
+    ["Khái niệm", "Năng suất lao động được đo bằng lượng sản phẩm tạo ra trong một đơn vị thời gian hoặc lượng thời gian cần thiết để sản xuất một đơn vị sản phẩm."],
+    ["Các nhân tố ảnh hưởng", "Trình độ và kỹ năng của người lao động; sự phát triển và ứng dụng khoa học – công nghệ; cách phối hợp trong quá trình sản xuất; quy mô và hiệu suất của tư liệu sản xuất; điều kiện tự nhiên."],
+    ["Giải thích thêm", "Sự kết hợp xã hội của quá trình sản xuất là cách người lao động, bộ phận và công đoạn phối hợp với nhau. Điều kiện tự nhiên như khí hậu, địa hình hoặc nguồn nguyên liệu có thể tác động đến năng suất tùy ngành."],
+    ["Ví dụ", "Một xưởng đào tạo công nhân, sắp xếp quy trình hợp lý và sử dụng thiết bị phù hợp có thể tạo nhiều sản phẩm đạt chuẩn hơn trong cùng thời gian. Nếu sản phẩm bán được và chi phí được kiểm soát, doanh nghiệp có thêm điều kiện tái đầu tư."],
+    ["Kết luận", "Năng suất lao động có thể tác động gián tiếp đến tích lũy thông qua việc giảm hao phí lao động cần thiết và tăng khả năng tạo ra giá trị thặng dư."]
+  ]},
+  { title: "Nhân tố 3: Sử dụng hiệu quả máy móc", body: [
+    ["Khái niệm", "Sử dụng hiệu quả máy móc là khai thác công năng thiết bị phù hợp với thiết kế, đồng thời quản lý bảo trì, năng lượng và chất lượng để hạn chế thời gian ngừng máy và sản phẩm lỗi."],
+    ["Xưởng A — sử dụng chưa hiệu quả", "Vận hành sai thông số, bỏ qua bảo trì, tiêu hao năng lượng và vật tư, tỷ lệ sản phẩm lỗi cao. Chi phí sửa chữa và phế phẩm tăng có thể làm giảm kết quả kinh doanh."],
+    ["Xưởng B — sử dụng hiệu quả", "Vận hành đúng quy trình, bảo trì định kỳ, đào tạo người sử dụng, kiểm soát chất lượng và sắp xếp lịch máy hợp lý. Nhờ vậy, xưởng có thể giảm chi phí trên mỗi sản phẩm."],
+    ["Kết luận", "Cùng lượng tư bản ứng trước, hiệu quả sử dụng thiết bị khác nhau có thể dẫn đến kết quả sản xuất khác nhau. Tuy nhiên, không nên vận hành quá tải vì có thể gây mất an toàn và tăng chi phí dài hạn."]
+  ], callout: "Thiết bị tốt chỉ phát huy tác dụng khi đi kèm quy trình, kỹ năng vận hành và bảo trì phù hợp." },
+  { title: "Nhân tố 4: Đại lượng tư bản ứng trước", body: [
+    ["Khái niệm", "Đại lượng tư bản ứng trước là tổng tư bản được đưa ra ban đầu để tổ chức và duy trì quá trình sản xuất kinh doanh."],
+    ["Hai bộ phận theo lý luận", "Tư bản bất biến (c) dùng để mua tư liệu sản xuất như máy móc, nhà xưởng và nguyên vật liệu; tư bản khả biến (v) dùng để mua sức lao động."],
+    ["Ví dụ so sánh", "Xưởng A có tư bản ứng trước 500 triệu đồng, xưởng B có 2 tỷ đồng. Nếu thị trường tiêu thụ thuận lợi và hiệu quả sản xuất tương đương, xưởng B có thể có điều kiện mua nhiều thiết bị, nguyên liệu hơn và tổ chức sản xuất quy mô lớn hơn."],
+    ["Điều kiện cần lưu ý", "Vốn lớn không bảo đảm chắc chắn tích lũy lớn. Kết quả còn phụ thuộc nhu cầu thị trường, hiệu quả sử dụng vốn, năng suất lao động, chi phí và năng lực quản trị."],
+    ["Sơ đồ ghi nhớ", "Tư bản ứng trước lớn hơn → có điều kiện mở rộng sản xuất → có khả năng tạo giá trị thặng dư lớn hơn → có khả năng tăng tích lũy, nếu các điều kiện khác thuận lợi."]
+  ]},
+  { title: "Hệ quả 1: Tăng cấu tạo hữu cơ của tư bản", body: [
+    ["Khái niệm", "Cấu tạo hữu cơ của tư bản là cấu tạo giá trị do cấu tạo kỹ thuật quyết định, phản ánh sự thay đổi trong quan hệ giữa tư liệu sản xuất và sức lao động."],
+    ["Ví dụ minh họa", "Một xưởng dệt ban đầu dùng 500 triệu đồng cho tư liệu sản xuất và 500 triệu đồng cho lao động. Sau khi đầu tư dây chuyền tự động, cơ cấu giả định chuyển thành 1,6 tỷ đồng cho tư liệu sản xuất và 400 triệu đồng cho lao động."],
+    ["Tác động có thể có", "Công nghệ có thể tăng năng suất và giảm một số công việc nặng nhọc, nhưng cũng có thể làm giảm nhu cầu ở một số vị trí hoặc đòi hỏi kỹ năng mới."],
+    ["Cần đánh giá cân bằng", "Khi phân tích hệ quả, nên xét cả hiệu quả sản xuất, việc làm, đào tạo lại và khả năng chuyển đổi nghề; không nên suy luận rằng mọi trường hợp tự động hóa đều tạo cùng một kết quả."]
+  ]},
+  { title: "Hệ quả 2: Tích tụ và tập trung tư bản", body: [
+    ["Tích tụ tư bản", "Là sự tăng lên của tư bản cá biệt thông qua việc tư bản hóa một phần giá trị thặng dư. Ví dụ: doanh nghiệp giữ lại một phần kết quả kinh doanh để mở thêm dây chuyền."],
+    ["Tập trung tư bản", "Là sự hợp nhất hoặc phân phối lại các tư bản đã tồn tại thành tư bản cá biệt lớn hơn, chẳng hạn thông qua sáp nhập hoặc mua lại doanh nghiệp."],
+    ["Phân biệt nhanh", "Tích tụ làm tăng quy mô tư bản cá biệt và góp phần làm tăng tổng tư bản xã hội; tập trung làm tăng quy mô tư bản của một đơn vị bằng cách kết hợp các tư bản đã có."],
+    ["Hệ quả", "Quy mô lớn có thể hỗ trợ đầu tư công nghệ và tận dụng lợi thế quy mô, nhưng tập trung quá mức cũng có thể làm suy giảm cạnh tranh."]
+  ]},
+  { title: "Hệ quả 3: Bần cùng hóa giai cấp công nhân", body: [
+    ["Bần cùng hóa tương đối", "Trong cách trình bày của lý luận kinh tế chính trị Mác, khái niệm này nói đến sự suy giảm tương đối vị thế thu nhập của người lao động so với giai cấp tư sản."],
+    ["Bần cùng hóa tuyệt đối", "Chỉ sự suy giảm mức sống thực tế trong những điều kiện nhất định, chẳng hạn mất việc, giảm thu nhập hoặc khủng hoảng kinh tế. Đây là khái niệm lý luận cần được phân tích theo bối cảnh cụ thể."],
+    ["Ví dụ minh họa", "Khi nhà máy thu hẹp sản xuất, một số lao động có thể mất việc và giảm thu nhập, khiến việc chi trả tiền nhà, học tập và chăm sóc sức khỏe trở nên khó khăn hơn."],
+    ["Liên hệ thực tế", "Khi đánh giá một quốc gia hay giai đoạn lịch sử, cần đối chiếu dữ liệu về tiền lương, việc làm, giá cả, phúc lợi và điều kiện sống; không nên xem một ví dụ giả định là bằng chứng cho mọi trường hợp."]
+  ]},
+  { title: "Câu hỏi ôn tập", body: [
+    ["Câu 1", "Quan hệ nào giữ vai trò quyết định trong quan hệ sản xuất?\nA. Quan hệ sở hữu\nB. Quan hệ tổ chức quản lý\nC. Quan hệ phân phối\nD. Không quan hệ nào quyết định"],
+    ["Câu 2", "Hai hướng sử dụng giá trị thặng dư thường được nhấn mạnh trong bài là gì?\nA. Tiêu dùng cá nhân và tích lũy tư bản\nB. Chỉ gửi tiết kiệm\nC. Chỉ mua hàng hóa\nD. Chỉ trả thuế"],
+    ["Câu 3", "Điều kiện quan trọng để tái sản xuất mở rộng tư bản chủ nghĩa là gì?\nA. Tư bản khả biến phải luôn lớn hơn tư bản bất biến\nB. Số công nhân luôn phải tăng\nC. Có tích lũy tư bản để tăng quy mô tư bản ứng trước\nD. Không cần đầu tư bổ sung"],
+    ["Câu 4", "Khối lượng giá trị thặng dư phản ánh điều gì?\nA. Trình độ kỹ thuật\nB. Quy mô giá trị thặng dư thu được\nC. Giá bán hàng hóa\nD. Số lượng máy móc"],
+    ["Câu 5", "Yếu tố nào đóng vai trò quan trọng trong việc tạo ra giá trị thặng dư theo lý luận Mác?\nA. Máy móc thiết bị\nB. Nguyên vật liệu\nC. Sức lao động của công nhân\nD. Vốn đầu tư tự thân"]
+  ]},
+  { title: "Đáp án và tự đánh giá", body: [
+    ["Đáp án tham khảo", "Câu 1: A. Câu 2: A. Câu 3: C. Câu 4: B. Câu 5: C."],
+    ["Câu hỏi mở rộng", "1. Phân biệt tái sản xuất giản đơn và tái sản xuất mở rộng.\n2. Nêu bốn nhân tố ảnh hưởng đến quy mô tích lũy tư bản.\n3. Phân biệt tích tụ tư bản với tập trung tư bản.\n4. Nêu một lợi ích và một thách thức của tự động hóa đối với người lao động."],
+    ["Gợi ý cách trả lời", "Mỗi câu nên có khái niệm, giải thích cơ chế tác động và một ví dụ ngắn. Với các hệ quả xã hội, hãy phân biệt nội dung lý luận với bằng chứng thực tế của từng bối cảnh."],
+    ["Tài liệu đối chiếu", "Sử dụng giáo trình Kinh tế chính trị Mác – Lênin và tài liệu giảng viên cung cấp để kiểm tra thuật ngữ, cách diễn đạt và yêu cầu học phần."]
+  ], callout: "Đã bổ sung nội dung mở rộng và phần ôn tập. Hãy đối chiếu thuật ngữ với giáo trình chính thức của lớp." }
+);
+
 function escapeHTML(value = "") {
   return String(value).replace(/[&<>"']/g, char => ({ "&": "&amp;", "<": "&lt;", ">": "&gt;", '"': "&quot;", "'": "&#39;" })[char]);
 }
