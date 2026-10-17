@@ -115,7 +115,7 @@ body {
 .book-page {
     width: 100%;
     height: 100%;
-    background-color: #FBF9F1; /* Màu giấy kem vintage chuẩn mẫu */
+    background-color: #FBF9F1;
     display: flex;
     position: relative;
     overflow: hidden;
@@ -123,7 +123,7 @@ body {
 
 
 .left-sidebar {
-    width: 19%;
+    width: 13%;
     background-color: #7A9084;
     display: flex;
     align-items: center;
