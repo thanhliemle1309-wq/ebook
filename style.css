@@ -243,3 +243,7 @@ body {
     padding: 0.8em 1em 0.55em;
     margin: 0.9em 0 0.7em;
 }
+
+@media (max-width: 768px) {
+    /* CSS dành riêng cho điện thoại */
+}
