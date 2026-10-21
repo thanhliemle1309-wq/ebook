@@ -247,3 +247,8 @@ body {
 @media (max-width: 768px) {
     /* CSS dành riêng cho điện thoại */
 }
+
+img {
+    max-width: 100%;
+    height: auto;
+}
