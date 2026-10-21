@@ -1,5 +1,5 @@
 let currentLocation = 1;
-let numOfPapers = 20; 
+let numOfPapers = 6; 
 let maxLocation = numOfPapers + 1;
 
 const book = document.querySelector("#book");
