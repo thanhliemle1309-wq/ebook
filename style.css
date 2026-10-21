@@ -252,3 +252,67 @@ img {
     max-width: 100%;
     height: auto;
 }
+
+/* Kich thuoc sach vua man hinh, khong phong qua lon khi mo website */
+html {
+    width: 100%;
+    min-height: 100%;
+}
+
+body {
+    width: 100%;
+    min-height: 100vh;
+    min-height: 100dvh;
+    padding: 18px;
+    overflow: hidden;
+}
+
+.book {
+    width: min(900px, 92vw);
+    height: min(720px, 82vh);
+    height: min(720px, 82dvh);
+    flex-shrink: 0;
+}
+
+/* Noi dung va anh luon nam gon trong tung trang */
+.front-content,
+.back-content {
+    min-width: 0;
+    min-height: 0;
+    overflow: hidden;
+}
+
+.page-img {
+    display: block;
+    max-width: 100%;
+    max-height: 100%;
+}
+
+/* Man hinh nho: thu sach lai va chua trong khung nhin */
+@media (max-width: 768px) {
+    body {
+        padding: 10px;
+    }
+
+    .book {
+        width: min(94vw, 560px);
+        height: min(76vh, 620px);
+        height: min(76dvh, 620px);
+    }
+
+    .book-page {
+        font-size: 0.9em;
+    }
+}
+
+@media (max-width: 420px) {
+    .book {
+        width: 96vw;
+        height: 68vh;
+        height: 68dvh;
+    }
+
+    .book-page {
+        font-size: 0.82em;
+    }
+}
